@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca8d163b-b039-4549-b7e8-b552c7044cb6" name="Default Changelist" comment="" />
+    <list default="true" id="ca8d163b-b039-4549-b7e8-b552c7044cb6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="get-your-web" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WLxAuW5pbMW0Cmfdj2SLclaYbY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -17,6 +36,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/static" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -40,11 +66,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578942535279</updated>
-      <workItem from="1578942536637" duration="415000" />
+      <workItem from="1578942536637" duration="3338000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1343" height="158" key="GridCell.Tab.0.bottom" timestamp="1578943374150">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1343" height="158" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1578943374150" />
+    <state width="1343" height="158" key="GridCell.Tab.0.center" timestamp="1578943374149">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1343" height="158" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1578943374149" />
+    <state width="1343" height="158" key="GridCell.Tab.0.left" timestamp="1578943374148">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1343" height="158" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1578943374148" />
+    <state width="1343" height="158" key="GridCell.Tab.0.right" timestamp="1578943374150">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1343" height="158" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1578943374150" />
   </component>
 </project>
