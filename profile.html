@@ -34,13 +34,58 @@
     <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
             <div class="sidebar-sticky">
-                <ul class="nav flex-column"/>
+                <ul class="nav flex-column">
+                    <li class="nav-item nav-link" onclick="displayForm(1)">
+                        Basic Info
+                    </li>
+                </ul>
             </div>
         </nav>
+        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form1" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="fullName">Full Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="fatherName">Father's Name:</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="fatherName" placeholder="Enter Father's Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-10" for="motherName">Mother's Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="motherName" placeholder="Enter Mother's Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-10" for="gender">Gender:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="gender">
+                                <option> Male </option>
+                                <option> Female </option>
+                                <option> Other </option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
 <script>
+
+    function displayForm(id) {
+        document.getElementById("form" + id).style.display = "block";
+    }
+
+
+    // document.getElementById("form1").style.display = "block";
     const sidebarlist = document.getElementsByClassName("sidebar-sticky")[0].childNodes[1];
 
     const items = [
@@ -61,7 +106,7 @@
             ` </a> </li>`;
     }
 
-    sidebarlist.innerHTML = list;
+    // sidebarlist.innerHTML = list;
 </script>
 </body>
 
