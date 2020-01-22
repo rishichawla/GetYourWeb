@@ -38,6 +38,10 @@
                     <li class="nav-item nav-link" onclick="displayForm(1)">
                         Basic Info
                     </li>
+                    <li class="nav-item nav-link" onclick="displayForm(2)">
+                        Education Info
+                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -45,25 +49,46 @@
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <form class="form-horizontal" style="width: 100%">
                     <div class="form-group">
-                        <label class="control-label col-sm-2" for="fullName">Full Name:</label>
+                        <label class="control-label col-sm-2" for="fullName" required>Full Name:</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name">
                         </div>
                     </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="firstName" required>First Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name only">
+                        </div>
+                    </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="middleName">Middle Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
+                        </div>
+                    </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="lastName" required>Last Name :</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+                        </div>
+                    </div>
+
+
                     <div class="form-group">
-                        <label class="control-label col-sm-5" for="fatherName">Father's Name:</label>
-                        <div class="col-sm-5">
+                        <label class="control-label col-sm-5" for="fatherName" required>Father's Name:</label>
+                        <div class="col-sm-10">
                             <input type="text" class="form-control" id="fatherName" placeholder="Enter Father's Name">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-10" for="motherName">Mother's Name:</label>
+                        <label class="control-label col-sm-10" for="motherName" required>Mother's Name:</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="motherName" placeholder="Enter Mother's Name">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-10" for="gender">Gender:</label>
+                        <label class="control-label col-sm-10" for="gender" required>Gender:</label>
                         <div class="col-sm-10">
                             <select class="form-control" id="gender">
                                 <option> Male </option>
@@ -72,9 +97,92 @@
                             </select>
                         </div>
                     </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="dob">Date of Birth:</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="dob" placeholder="Enter Date of Birth">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-10" for="nationality" required>Nationality:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="nationality">
+                                <option> Indian</option>
+                                <option> NRI </option>
+                                <option> Other </option>
+                            </select>
+                        </div>
+                    </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-10" for="category" required>Category:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="category">
+                                <option> General</option>
+                                <option> OBC </option>
+                                <option> OBC(creamy) </option>
+                                <option> ST</option>
+                                <option> SC </option>
+
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="perAddress" required>Permanent Address</label>
+                        <div class="col-sm-10">
+                            <textarea rows="4" cols="10" class="form-control" id="perAddress"  placeholder=" Enter permanent address"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="tempAddress" required>Temporary Address</label>
+                        <div class="col-sm-10">
+                            <textarea rows="4" cols="10" class="form-control" id="tempAddress"  placeholder=" Enter Temporary address"></textarea>
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-10" for="course" required>Course:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="course">
+                                <option> B.Tech</option>
+                                <option> B.E. </option>
+                                <option> MCA </option>
+                                
+
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-10" for="discipline" required>Discipline:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="discipline">
+                            	<option> Bio Medical Engineering</option>
+                            	<option> Bacheleor of pharmacy</option>
+                                <option> Computer Engineering</option>
+                                <option> Civil Enginnering</option>
+                                <option> Electrical Engineering </option>
+                                <option> Electronics and Instrumentation Engineering </option>
+                                <option> Electronics and Telecommunication Engineering</option>
+                                <option> Information Technology Enginnering</option>
+                                <option> Industrial and Production Enginnering</option>
+                                <option>Mechanical Engineering  </option>
+
+                                
+
+
+                            </select>
+                        </div>
+                    </div>
+
+
+
+
+
+
                 </form>
             </div>
         </div>
+       
     </div>
 </div>
 
@@ -109,5 +217,4 @@
     // sidebarlist.innerHTML = list;
 </script>
 </body>
-
 </html>
