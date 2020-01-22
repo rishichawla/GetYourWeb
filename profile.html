@@ -57,7 +57,7 @@
                         Graduation
                     </li>
                      <li class="nav-item nav-link" onclick="displayForm(8)">
-                        Contact Info
+                        Contact and Gmail Info
                     </li>
                      <li class="nav-item nav-link" onclick="displayForm(9)">
                         Documents
@@ -75,20 +75,21 @@
         <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form1" style="display: none">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <form class="form-horizontal" style="width: 100%">
+                	<h4>BASIC INFORMATION:</h4>
                     <div class="form-group">
-                        <label class="control-label col-sm-2" for="fullName" ><strong>Full Name:</strong> <span class="required " style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="fullName" ><strong>Full Name in Proper Case:</strong> <span class="required " style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name">
                         </div>
                     </div>
                       <div class="form-group">
-                        <label class="control-label col-sm-2" for="firstName" required><strong>First Name:</strong><span class="required" style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="firstName" required><strong>First Name:</strong><span class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="firstName" placeholder="Enter First Name only">
                         </div>
                     </div>
                       <div class="form-group">
-                        <label class="control-label col-sm-2" for="middleName"><strong>Middle Name:</strong><span class="required" style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="middleName"><strong>Middle Name:</strong><span class="required" style="color: red;">*</span></label>
                         <p>Enter N.A. if not applicable</p>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name only">
@@ -96,7 +97,7 @@
                     </div>
 
                       <div class="form-group">
-                        <label class="control-label col-sm-2" for="lastName" required><strong>Last Name :</strong><span class="required" style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="lastName" required><strong>Last Name :</strong><span class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name only">
                         </div>
@@ -104,19 +105,19 @@
 
 
                     <div class="form-group">
-                        <label class="control-label col-sm-5" for="fatherName" required><strong>Father's Name:</strong><span class="required" style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="fatherName" required><strong>Father's Name:</strong><span class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="fatherName" placeholder="Enter Father's Name">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-10" for="motherName" required><strong>Mother's Name:</strong><span class="required">*</span></label>
+                        <label class="control-label col-sm-4" for="motherName" required><strong>Mother's Name:</strong><span class="required">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="motherName" placeholder="Enter Mother's Name">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-10" for="gender" required><strong>Gender:</strong><span class="required" style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="gender" required><strong>Gender:</strong><span class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <select class="form-control" id="gender">
                                 <option> Male </option>
@@ -126,13 +127,14 @@
                         </div>
                     </div>
                       <div class="form-group">
-                        <label class="control-label col-sm-2" for="dob"><strong>Date of Birth:</strong><span class="required"style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="dob"><strong>Date of Birth:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter Date of Birth carefully as per format required.</p>
                         <div class="col-sm-10">
                             <input type="date" class="form-control" id="dob" placeholder="Enter Date of Birth">
                         </div>
                     </div>
                      <div class="form-group">
-                        <label class="control-label col-sm-10" for="nationality" required><strong>Nationality:</strong><span class="required" style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="nationality" required><strong>Nationality:</strong><span class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <select class="form-control" id="nationality">
                                 <option> Indian</option>
@@ -142,11 +144,11 @@
                         </div>
                     </div>
                       <div class="form-group">
-                        <label class="control-label col-sm-10" for="category" required><strong>Category:</strong><span class="required"style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="category" required><strong>Category:</strong><span class="required"style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <select class="form-control" id="category">
                                 <option> General</option>
-                                <option> OBC </option>
+                                <option> OBC (Non-Creamy)</option>
                                 <option> OBC(creamy) </option>
                                 <option> ST</option>
                                 <option> SC </option>
@@ -156,18 +158,32 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-5" for="perAddress" required><strong>Permanent Address</strong><span class="required"style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="perAddress" required><strong>Permanent Address</strong><span class="required"style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <textarea rows="4" cols="10" class="form-control" id="perAddress"  placeholder=" Enter permanent address"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-5" for="tempAddress" required><strong>Temporary Address</strong><span class="required"style="color: red;">*</span></label>
+                        <label class="control-label col-sm-4" for="tempAddress" required><strong>Temporary Address</strong><span class="required"style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <textarea rows="4" cols="10" class="form-control" id="tempAddress"  placeholder=" Enter Temporary address"></textarea>
                         </div>
                     </div>
-                     <div class="form-group">
+                     
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form2" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                	<h4>EDUCATION INFORMATION :</h4>
+                	<div class="form-group">
                         <label class="control-label col-sm-10" for="course" required><strong>Course:</strong><span class="required"style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <select class="form-control" id="course">
@@ -201,6 +217,21 @@
                             </select>
                         </div>
                     </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-10" for="passOut" required><strong>Passing out year:</strong><span class="required"style="color: red;">*</span></label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="passOut">
+                                <option> 2020</option>
+                                <option> 2021 </option>
+                                <option> 2022</option>
+                                <option> 2023</option>
+                                
+
+
+                            </select>
+                        </div>
+                    </div>
+                      
 
 
 
@@ -210,7 +241,360 @@
                 </form>
             </div>
         </div>
-       
+         <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form3" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                	<h4>10th CLASS DETAILS:</h4>
+                	<div class="form-group">
+                        <label class="control-label col-sm-2" for="10cgpa"><strong>10 th CGPA:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter only CGPA. Example: 9.5. If not applicable enter 0. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="10CGPA" placeholder=" 10 th CGPA">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="10percentage"><strong>10 th Percentage:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter percentage only not CGPA. Don't use "%" sign. Example: 99.99. Enter percentage as simple average or by using legitimate conversion formula as mentioned on back side of marksheet. If not applicable enter 0. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="10percentage" placeholder=" 10 th Percentage.">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="10medium"><strong>10 th Study Medium:</strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="10medium" placeholder=" 10 th Class Medium">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="10year"><strong>10 th Year of Passing:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter year in YYYY format. Exactly as mentioned in mark-sheet. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="10year" placeholder=" 10 th Year">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="10institute"><strong>10 th Institute/School:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Name of Institute / School (Full Form) along with city. Exactly as mentioned in mark-sheet. Example : Kendriya Vidyalaya, Bhopal.p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="10institute" placeholder=" 10 th Institute/School">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="10board"><strong>10 th Board/University:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Name of Board / University (Full Form). Exactly as mentioned in mark-sheet. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="10board" placeholder=" 10 th Board/University">
+                        </div>
+                    </div>
+                	
+                    
+                     
+                      
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form4" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                	<h4>DIPLOMA STUDY DETAILS:</h4>
+                	<div class="form-group">
+                        <label class="control-label col-sm-10" for="diploma" required><strong>Have you Done Diploma?</strong><span class="required" style="color: red;">*</span></label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="diploma">
+                                <option> Yes</option>
+                                <option> No </option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="diplomapercentage"><strong>Diploma Percentage:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter percentage only not CGPA. Don't use "%" sign. Example: 99.99. Enter percentage as simple average or by using legitimate conversion formula as mentioned on back side of marksheet. If not applicable enter 0. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="diplomapercentage" placeholder=" Diploma Percentage.">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="diplomacgpa"><strong>Diploma CGPA:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter only CGPA. Example: 9.5. If not applicable enter 0.</p>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="diplomacgpa" placeholder=" Diploma CGPA">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="diplomayearofadmission"><strong>Diploma Year of Admission:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter year in YYYY format. Exactly as mentioned in mark-sheet. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="diplomayearofadmission" placeholder=" diploma Year">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="diplomayearofpassing"><strong>Diploma Year of Passing:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter year in YYYY format. Exactly as mentioned in mark-sheet. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="diplomayearofpassing" placeholder=" diploma  Year">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="diplomainstitute"><strong>Diploma Institute/School:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Name of Institute / School (Full Form) along with city. Exactly as mentioned in mark-sheet. Example : Kendriya Vidyalaya, Bhopal.p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="dipolmainstitute" placeholder=" diploma  Institute/School">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="diplomaboard"><strong>Diploma Board/University:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Name of Board / University (Full Form). Exactly as mentioned in mark-sheet. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="diplomaboard" placeholder=" diploma Board/University">
+                        </div>
+                    </div>
+                	
+                </form>
+            </div>
+        </div>
+         <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form5" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                	<h4>12TH STUDY DETAILS:</h4>
+                	<div class="form-group">
+                        <label class="control-label col-sm-2" for="12cgpa"><strong>12 th CGPA:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter only CGPA. Example: 9.5. If not applicable enter 0. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="12CGPA" placeholder=" 12 th CGPA">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="12percentage"><strong>12th percentage:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter percentage only not CGPA. Don't use "%" sign. Example: 99.99. Enter percentage as simple average or by using legitimate conversion formula as mentioned on back side of marksheet. If not applicable enter 0. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="12percentage" placeholder=" 12 th Percentage.">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="10medium"><strong>12 th Study Medium:</strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="12medium" placeholder=" 12 th Class Medium">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="12year"><strong>12 th Year of Passing:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter year in YYYY format. Exactly as mentioned in mark-sheet. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="12year" placeholder=" 12 th Year">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="12institute"><strong>12 th Institute/School:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Name of Institute / School (Full Form) along with city. Exactly as mentioned in mark-sheet. Example : Kendriya Vidyalaya, Bhopal.p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="12institute" placeholder=" 12 th Institute/School">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="12board"><strong>12 th Board/University:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Name of Board / University (Full Form). Exactly as mentioned in mark-sheet. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="12board" placeholder=" 12 th Board/University">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+         
+        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form6" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                	<h4>JEE SCORE DETAILS:</h4>
+                	 <div class="form-group">
+                        <label class="control-label col-sm-2" for="JEERank"><strong>JEE All India Rank:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter All India Rank (AIR), obtained in JEE. If Not Applicable enter 0.</p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="JEERank" placeholder=" JEE All India Rank">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="JEEScore"><strong>JEE Score:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter score obtained in JEE. If Not Applicable enter 0.</p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="JEEScore" placeholder=" JEE Score">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form8" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                	<h4>CONTACT DETAILS:</h4>
+                	 <div class="form-group">
+                        <label class="control-label col-sm-4" for="contactPrimary"><strong>Contact Details-Primary(Self):</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Personal contact no. without using "+" sign & country code. Enter only 10 Digit No.. Example: 9876543210</p>
+                        <div class="col-sm-10">
+                            <input type="tel" pattern="[0-9]{10}" class="form-control" id="contactPrimary" placeholder=" Enter  Primary Phone number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="contactSecondary"><strong>Contact No. - Secondary (Parent's Contact No. Only)</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Without using "+" sign & country code; Own, Family, Friend, etc. Enter only 10 Digit No.. Example: 9876543210</p>
+                        <div class="col-sm-10">
+                            <input type="tel" pattern="[0-9]{10}" class="form-control" id="contactSecondary" placeholder=" Enter Secondary Phone Number">
+                        </div>
+                    </div>
+                    <h4>GMAIL ID DETAILS:</h4>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="gmailPrimary"><strong>Email ID - Primary (Self Gmail ID)</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Give Gmail ID. Example: abc@gmail.com. Make proper settings for Password Recovery(Alternate Email) of your GMail ID. As this GMail ID will not be changed in T&P Cell Database in future.</p>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="gmailPrimary" placeholder=" Enter Primary Gmail">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="gmailSecondary"><strong>Email ID - Secondary</strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="gmailSecondary" placeholder=" Enter Secondary Gmail ID">
+                        </div>
+                    </div>
+
+              
+
+                </form>
+            </div>
+        </div>
+        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form9" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                	<h4>PAN DETAILS:</h4>
+                	<p style="margin-left: 20px;">PAN Card No. Format : First 5 digit of PAN No. are Charachers, followed by a 4 digit No. followed by 1 Single Character. Example : ABCDE9999Z</p>
+                	<div class="form-group">
+                        <label class="control-label col-sm-6" for="pan"><strong>Enter your Permanent Account No. (PAN)</strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="pan" placeholder=" PAN number">
+                        </div>
+                    </div>
+                	
+                    <h4>AADHAR  DETAILS:</h4>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6" for="aadharName"><strong>Enter your full name as mentioned in your Aadhaar Card / UIDAI </strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="aadharName" placeholder="  full name in proper case:">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-6" for="aadharFatherName"><strong>Enter your father full name as mentioned in your Aadhaar Card / UIDAI </strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="aadharFatherName" placeholder=" father full name in proper case:">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6" for="aadharAddress" required><strong>Enter your address as mentioned in your Aadhaar Card / UIDAI </strong><span class="required"style="color: red;">*</span></label>
+                        <div class="col-sm-10">
+                            <textarea rows="4" cols="10" class="form-control" id="aadharAddress"  placeholder=" address as mentioned in UIDAI"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6" for="aadharNumber"><strong>Enter your aadhar number as mentioned in your Aadhaar Card / UIDAI </strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="aadharNumber" placeholder="  aadhar number ">
+                        </div>
+                    </div>
+                    <h4>DRIVING CARD  DETAILS:</h4>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6" for="drivingLicense"><strong>Enter your driving  license number  </strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="drivingLicense" placeholder=" driving license number ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6" for="drivingName"><strong>Enter your name associated in driving license  </strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="drivingName" placeholder="  name associated in driving license ">
+                        </div>
+                    </div>
+                    <h4>PASSPORT DETAILS:</h4>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6" for="passportName"><strong>Enter your name associated in Passport   </strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="passportName" placeholder=" Passport name associated ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6" for="passportNumber"><strong>Enter your passport number associated in passport </strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="drivingName" placeholder="passport number ">
+                        </div>
+                    </div>
+                    <h4>VOTER ID DETAILS:</h4>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6" for="voterID"><strong>Enter your voter id </strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="voterID" placeholder="voter id ">
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form10" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                	<h4>PHOTO UPLOADING: </h4>
+                	 <div class="form-group">
+                        <label class="control-label col-sm-2" for="photo"><strong>Choose photo:</strong><span class="required"style="color: red;">*</span></label>
+                        
+                        <div class="col-sm-10">
+                            <input type="file" class="form-control" id="photo" name="pic" accept="image/*">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+         <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form11" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                	<h4>RESUME/CV UPLOADING (1 PAGE AND 2 PAGE FORMAT):</h4>
+                	 <div class="form-group">
+                        <label class="control-label col-sm-4" for="onePageCV"><strong>Upload your one page CV:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Resume must be as per following instructions (Size must be less than 1MB & only PDF File Format) </p>
+                        
+                        <div class="col-sm-10">
+                            <input type="file" class="form-control" id="onePageCV" name="onePageCV" >
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-4" for="twoPageCV"><strong>Upload your two page CV:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Resume must be as per following instructions (Size must be less than 1MB & only PDF File Format) </p>
+                        
+                        <div class="col-sm-10">
+                            <input type="file" class="form-control" id="twoPageCV" name="twoPageCV" >
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>    
     </div>
 </div>
 
