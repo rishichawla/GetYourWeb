@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+
+    <title> Training and Placement Cell </title>
+</head>
+
+<body>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Training and Placement Cell</a>
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+        </li>
+    </ul>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item nav-link" onclick="displayForm(1)">
+                        Basic Info
+                    </li>
+                    <li class="nav-item nav-link" onclick="displayForm(2)">
+                        Education Info
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form1" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="fullName" required>Full Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name">
+                        </div>
+                    </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="firstName" required>First Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name only">
+                        </div>
+                    </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="middleName">Middle Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
+                        </div>
+                    </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="lastName" required>Last Name :</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="fatherName" required>Father's Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fatherName" placeholder="Enter Father's Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-10" for="motherName" required>Mother's Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="motherName" placeholder="Enter Mother's Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-10" for="gender" required>Gender:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="gender">
+                                <option> Male </option>
+                                <option> Female </option>
+                                <option> Other </option>
+                            </select>
+                        </div>
+                    </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="dob">Date of Birth:</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="dob" placeholder="Enter Date of Birth">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-10" for="nationality" required>Nationality:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="nationality">
+                                <option> Indian</option>
+                                <option> NRI </option>
+                                <option> Other </option>
+                            </select>
+                        </div>
+                    </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-10" for="category" required>Category:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="category">
+                                <option> General</option>
+                                <option> OBC </option>
+                                <option> OBC(creamy) </option>
+                                <option> ST</option>
+                                <option> SC </option>
+
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="perAddress" required>Permanent Address</label>
+                        <div class="col-sm-10">
+                            <textarea rows="4" cols="10" class="form-control" id="perAddress"  placeholder=" Enter permanent address"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="tempAddress" required>Temporary Address</label>
+                        <div class="col-sm-10">
+                            <textarea rows="4" cols="10" class="form-control" id="tempAddress"  placeholder=" Enter Temporary address"></textarea>
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-10" for="course" required>Course:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="course">
+                                <option> B.Tech</option>
+                                <option> B.E. </option>
+                                <option> MCA </option>
+                                
+
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-10" for="discipline" required>Discipline:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="discipline">
+                            	<option> Bio Medical Engineering</option>
+                            	<option> Bacheleor of pharmacy</option>
+                                <option> Computer Engineering</option>
+                                <option> Civil Enginnering</option>
+                                <option> Electrical Engineering </option>
+                                <option> Electronics and Instrumentation Engineering </option>
+                                <option> Electronics and Telecommunication Engineering</option>
+                                <option> Information Technology Enginnering</option>
+                                <option> Industrial and Production Enginnering</option>
+                                <option>Mechanical Engineering  </option>
+
+                                
+
+
+                            </select>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+<script>
+
+    function displayForm(id) {
+        document.getElementById("form" + id).style.display = "block";
+    }
+
+
+    // document.getElementById("form1").style.display = "block";
+    const sidebarlist = document.getElementsByClassName("sidebar-sticky")[0].childNodes[1];
+
+    const items = [
+        {name: 'Profile', link: 'profile.html'},
+        {name: 'Company Information Sheet', link: 'company_information,html'},
+        {name: 'Contact Information', link: 'contact.html'}
+    ];
+
+    let list = '';
+
+    for (let i in items) {
+        list += `<li class="nav-item"> <a class="nav-link" href="` +
+            items[i].link +
+            `"> <span data-feather="` +
+            items[i].name.toLowerCase() +
+            `"/> ` +
+            items[i].name +
+            ` </a> </li>`;
+    }
+
+    // sidebarlist.innerHTML = list;
+</script>
+</body>
+
+</html>
