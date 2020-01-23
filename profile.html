@@ -36,10 +36,10 @@
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
                     <li class="nav-item nav-link" onclick="displayForm(1)">
-                        Basic Info
+                        Basic Information
                     </li>
                     <li class="nav-item nav-link" onclick="displayForm(2)">
-                        Education Info
+                        Education Information
                     </li>
                     <li class="nav-item nav-link" onclick="displayForm(3)">
                         10th Class Details
@@ -287,16 +287,6 @@
                             <input type="text" class="form-control" id="10board" placeholder=" 10 th Board/University">
                         </div>
                     </div>
-                	
-                    
-                     
-                      
-
-
-
-
-
-
                 </form>
             </div>
         </div>
@@ -434,6 +424,56 @@
                 </form>
             </div>
         </div>
+         <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form7" style="display: none">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <form class="form-horizontal" style="width: 100%">
+                	<h4>GRADUATION:</h4>
+                	<div class="form-group">
+                        <label class="control-label col-sm-2" for="collegeCgpa"><strong>College CGPA:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter only CGPA. Example: 9.5. If not applicable enter 0. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="collegeCgpa" placeholder=" College CGPA">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="collegePercentage"><strong>College Percentage:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter percentage only not CGPA. Don't use "%" sign. Example: 99.99. Enter percentage as simple average or by using legitimate conversion formula as mentioned on back side of marksheet. If not applicable enter 0. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="collegePercentage" placeholder=" College Percentage.">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-2" for="collegeAdmission"><strong>College Year of Admission:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter year in YYYY format. Exactly as mentioned in mark-sheet. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="collegeAdmission" placeholder=" College year of Admission">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="collegeYear"><strong>College Year of Passing:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Enter year in YYYY format. Exactly as mentioned in mark-sheet. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="collegeYear" placeholder=" College year of passing">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="collegeInstitute"><strong>College Institute Name:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Name of Institute / School (Full Form) along with city. Exactly as mentioned in mark-sheet. Example : Kendriya Vidyalaya, Bhopal.p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="collegeInstitute" placeholder=" College Institute">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="collegeUniversity"><strong>College University:</strong><span class="required"style="color: red;">*</span></label>
+                        <p style="margin-left: 20px;">Name of Board / University (Full Form). Exactly as mentioned in mark-sheet. </p>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="collegeUniversity" placeholder=" college University">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
         <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form8" style="display: none">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <form class="form-horizontal" style="width: 100%">
