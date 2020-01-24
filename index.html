@@ -17,7 +17,7 @@
             crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="static/index.css">
-
+	<link rel="stylesheet" href="static/dycalendar.min.css">
     <title> Training and Placement Cell </title>
 </head>
 
@@ -39,7 +39,23 @@
         </nav>
     </div>
 </div>
-
+<div class="container-fluid " style="margin-left: 1200px; margin-top: 200px;">
+	<div class="some-class">
+	    
+	    <div class="dycalendar-container">
+	        <div id="dycalendar-today-with-skin-shadow" class="dycalendar-container skin-grey  round-edge gradient shadow-default"></div>
+	    </div>
+	</div>
+</div>
+<script src="static/dycalendar.min.js"></script>
+<script >
+	dycalendar.draw({
+     target: '#dycalendar-today-with-skin-shadow',
+     type: 'month',
+     prevnextbutton : "show",
+     highlighttoday:true
+});
+</script>
 <script>
     const sidebarlist = document.getElementsByClassName("sidebar-sticky")[0].childNodes[1];
 
@@ -63,6 +79,8 @@
 
     sidebarlist.innerHTML = list;
 </script>
+
+
 </body>
 
 </html>
