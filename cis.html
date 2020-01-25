@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="placementCoordinators.json"></script>
+
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+
+    <title> Training and Placement Cell </title>
+</head>
+
+<body>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Training and Placement Cell</a>
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+        </li>
+    </ul>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container">
+<div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <div class="ig">
+            <img  src="persistent.jpeg">
+        </div>  
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h5 style="color: black;">JNID  14-09-2019</h5>
+          </button>
+        </h5>
+        <h4 style="padding-left: 11px;">Persistent</h4>
+      </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+            <div class="card-deck">
+                <div class="card text-secondary bg-white">
+                  <div class="card-body">
+                    <p class="card-text"><strong>Description:<br>Website:<br>Eligibilty<br>Salary or Stipend<br>Job Description:<br>
+                    Job Location:<br>Joining Date:<br>Result:</strong> </p>  
+                    <button type="button" class="btn btn-outline-dark float-right">Apply Now</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <div class="ig">
+            <img  src="persistent.jpeg">
+        </div>  
+
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h5 style="color: black;">JNID  14-09-2019</h5>
+          </button>
+        </h5>
+        <h4 style="padding-left: 11px;">Principal Global</h4>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+            <div class="card-deck">
+                <div class="card text-secondary bg-white">
+                  <div class="card-body">
+                    <p class="card-text"><strong>Description:<br>Website:<br>Eligibilty<br>Salary or Stipend<br>Job Description:<br>
+                    Job Location:<br>Joining Date:<br>Result:</strong> </p>  
+                    <button type="button" class="btn btn-outline-dark float-right">Apply Now</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+</div>
+<script>
+//   function renderCards(){
+//   for(var i = 0; i < placementCoordinators.length; i++){
+//         var div = document.createElement('div');
+//         div.className = 'card-body';
+//         div.innerHTML = placementCoordinators[i].Email_id;
+//         document.getElementsByTagName('')[0].appendChild(div);
+//   }
+// }
+    const sidebarlist = document.getElementsByClassName("sidebar-sticky")[0].childNodes[1];
+
+    const items = [
+        {name: 'Profile', link: 'profile.html'},
+        {name: 'Company Information Sheet', link: 'cis.html'},
+        {name: 'Contact Information', link: 'contact.html'},
+        ];
+
+    let list = '';
+
+    for (let i in items) {
+        list += `<li class="nav-item"> <a class="nav-link" href="` +
+            items[i].link +
+            `"> <span data-feather="` +
+            items[i].name.toLowerCase() +
+            `"/> ` +
+            items[i].name +
+            ` </a> </li>`;
+    }
+
+    sidebarlist.innerHTML = list;
+</script>
+</body>
+<style>
+    .container {
+     width: 53%  ;
+     margin-left: 430px;
+     margin-top: 125px;
+     background: white;
+   }
+   .card-header{
+       background-color: white;
+   }
+   .ig{
+    padding-left: 550px;
+   }
+   </style>
+</html>
