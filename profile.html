@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -17,6 +18,13 @@
             crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="static/index.css">
+
+    <style>
+        form {
+            display: none;
+            width: 100%;
+        }
+    </style>
 
     <title> Training and Placement Cell </title>
 </head>
@@ -65,15 +73,15 @@
                 </ul>
             </div>
         </nav>
-        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form1" style="display: none">
+        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <form class="form-horizontal" style="width: 100%">
+                <form class="form-horizontal" id="form1" style="display: block">
                     <h4>Basic Information</h4>
                     <div class="form-group row">
                         <label class="control-label col-sm-2" for="fullName"><strong>Full Name:</strong><span
                                 class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="firstName" placeholder="Enter Full Name"
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name"
                                    required>
                         </div>
                     </div>
@@ -177,15 +185,11 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-12">
-                            <input type="submit" value="Save"/>
+                            <input type="submit" value="Save" onclick="formSubmit(event, 1)"/>
                         </div>
                     </div>
                 </form>
-            </div>
-        </div>
-        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form2" style="display: none">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <form class="form-horizontal" style="width: 100%">
+                <form class="form-horizontal" id="form2">
                     <h4>Education Information:</h4>
                     <div class="form-group row">
                         <label class="control-label col-sm-2" for="course"><strong>Course:</strong><span
@@ -228,13 +232,14 @@
                                 <option> 2023</option>
                             </select>
                         </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <input type="submit" value="Save" onclick="formSubmit(event, 2)"/>
+                            </div>
+                        </div>
                     </div>
                 </form>
-            </div>
-        </div>
-        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form3" style="display: none">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <form class="form-horizontal" style="width: 100%">
+                <form class="form-horizontal" id="form3">
                     <h4>10th Class Details:</h4>
                     <div class="form-group row">
                         <label class="control-label col-sm-2" for="10CGPA"><strong>10th CGPA:</strong><span
@@ -256,7 +261,8 @@
                         <label class="control-label col-sm-2" for="10medium"><strong>10th Study Medium:</strong><span
                                 class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="10medium" placeholder="10th Class Medium"
+                            <input type="text" class="form-control" id="10medium"
+                                   placeholder="10th Class Medium"
                                    required>
                         </div>
                     </div>
@@ -264,7 +270,8 @@
                         <label class="control-label col-sm-2" for="10year"><strong>10th Year of Passing:</strong><span
                                 class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="10year" placeholder=" 10th Year" required>
+                            <input type="text" class="form-control" id="10year" placeholder=" 10th Year"
+                                   required>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -280,16 +287,18 @@
                         <label class="control-label col-sm-2" for="10board"><strong>10th
                             Board/University:</strong><span class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="10board" placeholder=" 10th Board/University"
+                            <input type="text" class="form-control" id="10board"
+                                   placeholder=" 10th Board/University"
                                    required>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="submit" value="Save" onclick="formSubmit(event, 3)"/>
+                        </div>
+                    </div>
                 </form>
-            </div>
-        </div>
-        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form4" style="display: none">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <form class="form-horizontal" style="width: 100%">
+                <form class="form-horizontal" id="form4">
                     <h4>Diploma Study Details:</h4>
                     <div class="form-group row">
                         <label class="control-label col-sm-2" for="diploma"><strong>Have you Done
@@ -349,12 +358,13 @@
                                    placeholder="Diploma Board/University" required>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="submit" value="Save" onclick="formSubmit(event, 4)"/>
+                        </div>
+                    </div>
                 </form>
-            </div>
-        </div>
-        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form5" style="display: none">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <form class="form-horizontal" style="width: 100%">
+                <form class="form-horizontal" id="form5">
                     <h4>12th Study Details:</h4>
                     <div class="form-group row">
                         <label class="control-label col-sm-2" for="12CGPA"><strong>12 th CGPA:</strong><span
@@ -364,7 +374,8 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="control-label col-sm-2" for="12percentage"><strong>12th percentage:</strong><span
+                        <label class="control-label col-sm-2" for="12percentage"><strong>12th
+                            percentage:</strong><span
                                 class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="12percentage" placeholder=" 12th Percentage"
@@ -372,14 +383,16 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="control-label col-sm-2" for="12medium"><strong>12th Study Medium:</strong><span
+                        <label class="control-label col-sm-2" for="12medium"><strong>12th Study
+                            Medium:</strong><span
                                 class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="12medium" placeholder=" 12th Class Medium">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="control-label col-sm-2" for="12year"><strong>12th Year of Passing:</strong><span
+                        <label class="control-label col-sm-2" for="12year"><strong>12th Year of
+                            Passing:</strong><span
                                 class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="12year" placeholder=" 12th Year">
@@ -395,22 +408,26 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="control-label col-sm-2" for="12board"><strong>12th Board/University:</strong><span
+                        <label class="control-label col-sm-2" for="12board"><strong>12th
+                            Board/University:</strong><span
                                 class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="12board" placeholder=" 12th Board/University"
+                            <input type="text" class="form-control" id="12board"
+                                   placeholder=" 12th Board/University"
                                    required>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="submit" value="Save" onclick="formSubmit(event, 5)"/>
+                        </div>
+                    </div>
                 </form>
-            </div>
-        </div>
-        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form6" style="display: none">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <form class="form-horizontal" style="width: 100%">
+                <form class="form-horizontal" id="form6">
                     <h4>JEE Score Details:</h4>
                     <div class="form-group row">
-                        <label class="control-label col-sm-2" for="JEERank"><strong>JEE All India Rank:</strong><span
+                        <label class="control-label col-sm-2" for="JEERank"><strong>JEE All India
+                            Rank:</strong><span
                                 class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="JEERank" placeholder=" JEE All India Rank">
@@ -423,12 +440,13 @@
                             <input type="text" class="form-control" id="JEEScore" placeholder=" JEE Score">
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="submit" value="Save" onclick="formSubmit(event, 6)"/>
+                        </div>
+                    </div>
                 </form>
-            </div>
-        </div>
-        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form7" style="display: none">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <form class="form-horizontal" style="width: 100%">
+                <form class="form-horizontal" id="form7">
                     <h4>Graduation:</h4>
                     <div class="form-group row">
                         <label class="control-label col-sm-2" for="collegeCgpa"><strong>College CGPA:</strong><span
@@ -478,16 +496,17 @@
                                    placeholder="College University" required>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="submit" value="Save" onclick="formSubmit(event, 7)"/>
+                        </div>
+                    </div>
                 </form>
-            </div>
-        </div>
-
-        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form8" style="display: none">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <form class="form-horizontal" style="width: 100%">
+                <form class="form-horizontal" id="form8">
                     <h4>Contact Details:</h4>
                     <div class="form-group row">
-                        <label class="control-label col-sm-2" for="contactPrimary"><strong>Primary (Self):</strong><span
+                        <label class="control-label col-sm-2" for="contactPrimary"><strong>Primary
+                            (Self):</strong><span
                                 class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="tel" pattern="[0-9]{10}" class="form-control" id="contactPrimary"
@@ -495,7 +514,8 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="control-label col-sm-2" for="contactSecondary"><strong>Secondary (Parent's Contact
+                        <label class="control-label col-sm-2" for="contactSecondary"><strong>Secondary (Parent's
+                            Contact
                             No. Only)</strong><span class="required"
                                                     style="color: red;">*</span></label>
                         <div class="col-sm-10">
@@ -520,12 +540,13 @@
                                    placeholder="Enter Secondary Gmail ID" required>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="submit" value="Save" onclick="formSubmit(event, 8)"/>
+                        </div>
+                    </div>
                 </form>
-            </div>
-        </div>
-        <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="form9" style="display: none">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <form class="form-horizontal" style="width: 100%">
+                <form class="form-horizontal" id="form9">
                     <h4>Documents:</h4>
                     <div class="form-group row">
                         <label class="control-label col-sm-2" for="pan"><strong>Enter your PAN (PAN)</strong><span
@@ -542,7 +563,8 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="control-label col-sm-2" for="drivingLicense"><strong>Enter your driving license
+                        <label class="control-label col-sm-2" for="drivingLicense"><strong>Enter your driving
+                            license
                             number</strong><span class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="drivingLicense"
@@ -553,32 +575,54 @@
                         <label class="control-label col-sm-2" for="passportNumber"><strong>Enter your passport
                             number</strong><span class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="passportNumber" placeholder="Passport Number ">
+                            <input type="text" class="form-control" id="passportNumber"
+                                   placeholder="Passport Number ">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="control-label col-sm-2" for="voterID"><strong>Enter your voter id </strong><span
+                        <label class="control-label col-sm-2" for="voterID"><strong>Enter your voter
+                            id </strong><span
                                 class="required" style="color: red;">*</span></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="voterID" placeholder="Voter ID">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="submit" value="Save" onclick="formSubmit(event, 9)"/>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-</div>
 
-<script>
+    <script>
+        document.querySelectorAll('input').forEach((key, value) => {
+            key.name = key.id;
+        });
+        document.querySelectorAll('select').forEach((key, value) => {
+            key.name = key.id;
+        })
 
-    function displayForm(id) {
-        for (let i = 1; i <= 9; i++) {
-            document.getElementById("form" + i).style.display = "none";
+        function displayForm(id) {
+            for (let i = 1; i <= 9; i++) {
+                document.getElementById("form" + i).style.display = "none";
+            }
+
+            document.getElementById("form" + id).style.display = "block";
         }
 
-        document.getElementById("form" + id).style.display = "block";
-    }
-</script>
+        function formSubmit(event, id) {
+            let data = {};
+            event.preventDefault();
+            const formData = new FormData(document.getElementById("form" + id));
+            formData.forEach((val, key) => {
+                data[key] = val;
+            });
+            console.log(data);
+        }
+    </script>
 </body>
 
 </html>
